@@ -1,7 +1,7 @@
 <template>
   <div class="nav-container">
     <nav class="gradient-custom navbar navbar-expand-lg navbar-light">
-      <router-link to="/" class="navbar-brand">
+      <router-link to="/chat" class="navbar-brand">
         <div class="img-container">
           <img
             alt="YouthfulWell Logo"

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
 import AuthorsPage from '../pages/AuthorsPage.vue'
+import AIAssistantChatPage from '../pages/AIAssistantChatPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: '/authors',
       name: 'authors',
       component: AuthorsPage
+    },
+    {
+      path: '/chat',
+      name: 'chat',
+      component: AIAssistantChatPage
     }
   ]
 })

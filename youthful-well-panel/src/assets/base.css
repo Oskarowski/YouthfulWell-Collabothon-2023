@@ -69,6 +69,8 @@ body {
 
   font-family: 'Bitter', serif;
 
+  overflow: hidden;
+
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
