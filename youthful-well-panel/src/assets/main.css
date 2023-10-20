@@ -1,35 +1,52 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
 
-  font-weight: normal;
+  font-weight: normal; */
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+body {
+  background-size: cover;
+  background: linear-gradient(to bottom, #007b3e, #009844, #00a45a, #00b86f, #00cc85);
+  /* animation:
+    gradient 15s ease infinite,
+    parallax 25s ease infinite; */
+  z-index: -1000;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+@keyframes parallax {
+  0% {
+    transform: translateY(0);
   }
+  100% {
+    transform: translateY(-10px);
+  }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.container {
+  margin: 0 auto;
+}
+
+.text-with-outline {
+  color: white; /* Set the text color to white */
+  text-shadow:
+    -1px -1px 0 black,
+    2px -1px 0 black,
+    0 1px 0 black,
+    0 0 0 black;
 }
