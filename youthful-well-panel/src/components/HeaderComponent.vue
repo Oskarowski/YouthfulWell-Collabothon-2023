@@ -79,7 +79,7 @@ export default {
   align-items: center;
   justify-content: center;
   /* top and bottom | left and right */
-  margin: 1em 0;
+  margin: 0.5em 0;
   border-radius: 0.5em;
 }
 

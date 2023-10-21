@@ -1,6 +1,5 @@
 <template>
-  <div id="chat-container"></div>
-  <p>Here watsonx Assistant</p>
+  <div></div>
 </template>
 <script>
 export default {
@@ -21,11 +20,11 @@ export default {
         '/WatsonAssistantChatEntry.js'
 
       // Select the target element by its id
-      const targetElement = document.getElementById('chat-container')
+      // const targetElement = document.getElementById('chat-container')
       // Append the new content to the target element
-      targetElement.appendChild(t)
+      // targetElement.appendChild(t)
 
-      // document.head.appendChild(t)
+      document.head.appendChild(t)
     })
   }
 }

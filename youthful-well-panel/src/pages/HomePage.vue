@@ -2,6 +2,10 @@
   <div></div>
 </template>
 <script>
-export default {}
+export default {
+  mounted() {
+    this.$router.push({ name: 'chat' })
+  }
+}
 </script>
 <style></style>
